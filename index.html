@@ -1,206 +1,379 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB MONROES</title>
-
-    
     <style>
-        body{
-            background-color: beige;
+        body { background-color: beige; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        a { text-decoration: none; color: inherit; }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"], textarea, select {
+            width: 100%; padding: 8px; border: 1px solid #ccc; font-size: 13px; box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 10px 24px; background-color: green; color: white; border: none; font-weight: bold; cursor: pointer;
         }
     </style>
 </head>
-
 <body>
-    
-    <h2>
-    <img src="img/logo.jpg" width="250" alt="Logo Monroes" style="vertical-align: middle;"> 
-    MONROES KIDS
-    </h2>
-    <marquee direction="up"><h1>🥳¡Tu tienda online de confianza para los pequeños de la casa!🥳</h1></marquee>
-    <nav>
-        <h2>PARA BEBES👶🏻</h2>
-        </nav>
 
-        <a href="para bebes.html">
-    <img src="img/Ropa bebe.jpg"width="400" alt="Ropa bebe" height="400">
+<!-- ===== HEADER ===== -->
+<table width="80%" bgcolor="#BC9AF4" cellpadding="12" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td><a href="#"><img src="img/logo.jpg" alt="logomonroeskids" height="150"></a></td>
+                    <td width="10"></td>
+                    <td style="color:black; font-size:22px; font-weight:900; letter-spacing:3px;">MONROES KIDS</td>
+                </tr>
+            </table>
+        </td>
+       
+    </tr>
+</table>
 
+<!-- ===== MARQUEE ===== -->
+<table width="75%" cellpadding="0" cellspacing="0" border="0" align="center" id="inicio">
+    <tr>
+        <td align="center">
+            <marquee direction="up" height="60">
+                <h2>🥳 ¡Tu tienda online de confianza para los pequeños de la casa! 🥳</h2>
+            </marquee>
+        </td>
+    </tr>
+</table>
 
-        <a href="para bebes pijamas index.html">
-    <img src="img/Pijamas con tematica.jpg"width="400" alt="Pijama con tematica" height="400"></a>
+<!-- ===== LAYOUT PRINCIPAL: MENÚ IZQUIERDO + CONTENIDO ===== -->
+<table width="80%" cellpadding="0" cellspacing="0" border="0" style="margin-top:20px;">
+    <tr valign="top">
 
-        <a href="para bebes conjuntos .index.html">
-    <img src="img/Conjunto.jpg"width="400" alt="Conjunto" height="400"></a>
-    
-    <nav>
-        <h2>PARA NIÑOS🧒🏻</h2>
-    </nav>
+        <!-- ===== MENÚ LATERAL IZQUIERDO ===== -->
+        <td width="180" bgcolor="#BC9AF4" style="padding:20px;">
 
-        <a href="polos index.html">
-     <img src="img/polos para niños.jpg" alt="Polos" width="350" height="350"></a>
+            <p style="color:black; font-weight:900; font-size:14px; letter-spacing:2px; border-bottom:2px solid black; padding-bottom:8px;">
+                MENÚ
+            </p>
 
-     <a href="para niños.html">
+            <table cellpadding="6" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td><a href="#inicio" style="color:black; font-size:13px; font-weight:700;">🏠 Inicio</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#bebes" style="color:black; font-size:13px; font-weight:700;">👶 Para Bebés</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#ninos" style="color:black; font-size:13px; font-weight:700;">👦 Para Niños</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#ninas" style="color:black; font-size:13px; font-weight:700;">👧 Para Niñas</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#contacto" style="color:black; font-size:13px; font-weight:700;">📩 Contáctanos</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#micuenta" style="color:black; font-size:13px; font-weight:700;">👤 Mi Cuenta</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#nosotros" style="color:black; font-size:13px; font-weight:700;">ℹ️ Nosotros</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#envios" style="color:black; font-size:13px; font-weight:700;">🚚 Envíos y Pagos</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#carrito" style="color:black; font-size:13px; font-weight:700;">🛒 Carrito</a></td>
+                </tr>
+            </table>
 
-    <img src="img2/Poleras para niños.jpg" width="350" alt="Poleras para niños" height="350"></a>
+        </td>
 
-       <a href="para niños casacas index.html">
-    <img src="img 4 - niños/image.png" width="350" alt="Casacas para niños" height="350"></a>
+        <!-- ===== CONTENIDO PRINCIPAL ===== -->
+        <td style="padding:20px;">
 
-       <a href="pantalones para niños index.html">
-    <img src="img2/Pantalones para niños.jpg" width="350" alt="Pantalones para niños" height="350"></a>
+            <!-- SECCIÓN BEBÉS -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td id="bebes" align="center" style="font-size:24px; font-weight:900; letter-spacing:4px; color:#1a1a2e; padding-bottom:10px;">
+                        ROPA PARA BEBÉS 👶🏻
+                    </td>
+                </tr>
+            </table>
 
-    <nav>
+            <table width="100%" cellpadding="16" cellspacing="10" border="0">
+                <tr>
+                    <td width="25%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img/Ropa bebe.jpg" alt="Ropa para bebés" width="180" height="150"><br>
+                    <br>
+                        <strong>BODYS</strong><br>
+                    </br>
+                        <a href="bodys index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                    <td width="25%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img/Pijamas con tematica.jpg" alt="Pijamas" width="180" height="150"><br>
+                     <br>
+                        <strong>PIJAMAS</strong><br>
+                    </br>
+                        <a href="pijamas index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                    <td width="25%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img/Conjunto.jpg" alt="Conjunto" width="180" height="150"><br>
+                     <br>
+                        <strong>CONJUNTOS</strong><br>
+                    </br>
+                        <a href="Conjuntos index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                   
+                </tr>
+            </table>
 
-    <h2>PARA NIÑAS👧🏻</h2>
-    </nav>
+            <br>
 
-    <a href="blusas index.html">
-        <img src="img/blusas para niñas.jpg" alt="Blusas para ninñas" width="350" height="350">
-        <a href="para niñas.html">
-    <img src="img/POLERAS PARA NIÑAS.jpg" width="350" height="350" alt="poleras"></a>
+            <!-- SECCIÓN NIÑOS -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td id="ninos" align="center" style="font-size:24px; font-weight:900; letter-spacing:4px; color:#1a1a2e; padding-bottom:10px;">
+                        ROPA PARA NIÑOS 👦🏻
+                    </td>
+                </tr>
+            </table>
 
-        <a href="vestidos index.html">
-    <img src="img/VESTIDOS PARA NIÑAS.jpg" width="350" height="350" alt="Vestidos"></a>
-         
-        <a href="Faldas index.html">
-        <img src="img2/Vestidos y faldas.jpg"width="350" height="350" alt="Vestidos"></a>
+            <table width="100%" cellpadding="16" cellspacing="10" border="0">
+                <tr>
+                    <td width="33%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img/polos para niños.jpg" alt="Ropa" width="180" height="150"><br>
+                    <br>
+                        <strong>POLOS</strong><br>
+                    </br>
+                        <a href="polos index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                    <td width="33%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img2/Poleras para niños.jpg" alt="Pijamas" width="180" height="150"><br>
+                        <br>
+                        <strong>POLERAS</strong><br>
+                    </br>
+                        <a href="poleras index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                    <td width="33%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img 4 - niños/image.png" alt="Pijamas" width="180" height="150"><br>
+                    <br>
+                        <strong>CASACAS</strong><br>
+                    </br>
+                        <a href="casacas index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                    <td width="33%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img2/Pantalones para niños.jpg" alt="Conjunto" width="180" height="150"><br>
+                        <br>
+                        <strong>PANTALONES</strong><br>
+                    </br>
+                        <a href="pantalones index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                </tr>
+            </table>
 
+            <br>
 
-    <nav>
+            <!-- SECCIÓN NIÑAS -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td id="ninas" align="center" style="font-size:24px; font-weight:900; letter-spacing:4px; color:#1a1a2e; padding-bottom:10px;">
+                        ROPA PARA NIÑAS 👧🏻
+                    </td>
+                </tr>
+            </table>
 
-    <a href="2index.html"><h3>FILTRA TU COMPRA IDEAL</h3></a>
-    </nav>
-    
-        <hr>
+            <table width="100%" cellpadding="16" cellspacing="10" border="0">
+                <tr>
+                    <td width="25%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img/blusas para niñas.jpg" alt="Ropa" width="180" height="150"><br>
+                    <br>
+                        <strong>BLUSAS</strong><br>
+                    </br>
+                        <a href="blusas index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                    <td width="25%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img/POLERAS PARA NIÑAS.jpg" alt="Pijamas" width="180" height="150"><br>
+                     <br>
+                        <strong>POLERAS</strong><br>
+                    </br>
+                        <a href="poleras niña index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                    <td width="25%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img/VESTIDOS PARA NIÑAS.jpg" alt="Conjunto" width="180" height="150"><br>
+                     <br>
+                        <strong>VESTIDOS</strong><br>
+                    </br>
+                        <a href="vestidos index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                    <td width="25%" bgcolor="#ffffff" align="center" style="border:1px solid #ddd;">
+                        <img src="img2/Vestidos y faldas.jpg" alt="Conjunto" width="180" height="150"><br>
+                     <br>
+                        <strong>FALDAS</strong><br>
+                    </br>
+                        <a href="faldas index.html" style="padding:9px 24px; background-color:#BC9AF4; color:white;">VER PRODUCTO</a>
+                    </td>
+                  
+                </tr>
+            </table>
 
-<section>
+            <br>
+            <hr>
 
-<h2>Contáctanos</h2>
+            <!-- FILTRA TU COMPRA -->
+            <p><a href="2index.html" style="color:green; font-weight:bold; font-size:16px;">🔍 FILTRA TU COMPRA IDEAL</a></p>
 
-<form action="contactanos index.html" method="get">
+            <hr>
 
-Nombre:<br>
-<input type="text" name="nombre" required>
-<br><br>
+            <!-- CONTACTO -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td id="contacto">
+                        <h2>Contáctanos</h2>
+                        <form action="contactanos index.html" method="get">
+                            <table cellpadding="6" cellspacing="0" border="0" width="60%">
+                                <tr>
+                                    <td>Nombre:<br><input type="text" name="nombre" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Correo:<br><input type="email" name="email" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Teléfono:<br><input type="tel" name="telefono"required></td>
+                                </tr>
+                                <tr>
+                                    <td>Motivo de contacto:<br>
+                                        <select name="motivo">
+                                            <option>Consulta</option>
+                                            <option>Pedido</option>
+                                            <option>Reclamo</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mensaje:<br><textarea name="mensaje" rows="5"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="submit"value="Enviar"></tr></td>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </table>
 
-Correo:<br>
-<input type="email" name="correo" required>
-<br><br>
+            <hr>
 
-Teléfono:<br>
-<input type="tel" name="telefono">
-<br><br>
+            <!-- MI CUENTA -->
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td id="micuenta">
+                        <h2>Mi Cuenta</h2>
 
-Motivo de contacto:<br>
-<select name="motivo">
-<option>Consulta</option>
-<option>Pedido</option>
-<option>Reclamo</option>
-</select>
+                        <details>
+                            <summary style="cursor:pointer; font-weight:bold; padding:8px; background-color:#e0e0e0;">REGÍSTRATE AQUÍ</summary>
+                            <br>
+                            <form action="registro index.html" method="get">
+                                <table cellpadding="6" cellspacing="0" border="0" width="60%">
+                                    <tr><td>Nombres:<br><input type="text" name="nombres"required></td></tr>
+                                    <tr><td>Apellidos:<br><input type="text" name="apellidos"required></td></tr>
+                                    <tr><td>Correo Electrónico:<br><input type="email" name="correo"required></td></tr>
+                                    <tr><td>Contraseña:<br><input type="password" name="password"required></td></tr>
+                                    <tr><td>Teléfono:<br><input type="tel" name="telefono"required></td></tr>
+                                    <tr><td>Dirección:<br><input type="text" name="direccion"required></td></tr>
+                                    <tr><td><input type="submit" value="Registrarse"></td></tr>
+                                </table>
+                            </form>
+                        </details>
 
-<br><br>
+                        <br>
 
-Mensaje:<br>
-<textarea name="mensaje" rows="5" cols="40"></textarea>
+                        <details>
+                            <summary style="cursor:pointer; font-weight:bold; padding:8px; background-color:#e0e0e0;">INICIAR SESIÓN</summary>
+                            <br>
+                            <form action="inicio de sesion index.html" method="get">
+                                <table cellpadding="6" cellspacing="0" border="0" width="60%">
+                                    <tr><td>Correo:<br><input type="email" name="correo"required></td></tr>
+                                    <tr><td>Contraseña:<br><input type="password" name="password"required></td></tr>
+                                    <tr><td><input type="submit" value="Ingresar"></td></tr>
+                                </table>
+                            </form>
+                        </details>
 
-<br><br>
+                        <br>
 
-<input type="submit" value="Enviar">
+                        <details id="nosotros">
+                            <summary style="cursor:pointer; font-weight:bold; padding:8px; background-color:#e0e0e0;">INFORMACIÓN — SOBRE NOSOTROS</summary>
+                            <p>Somos una empresa dedicada a la venta de ropa para bebés, niños y niñas, para todas las estaciones y edades.</p>
+                        </details>
 
-</form>
+                        <br>
 
-</section>
+                        <details id="envios">
+                            <summary style="cursor:pointer; font-weight:bold; padding:8px; background-color:#e0e0e0;">ENVÍOS Y PAGOS</summary>
+                            <p>¡PRÓXIMAMENTE!</p>
+                        </details>
 
-</hr>
-    <li>
-        <H2>Mi Cuenta</H2>
-    <details>
-        <summary>REGISTRATE AQUI</summary>
-    <form action="registro index.html" method="get">
+                        <br>
 
-     <label>Nombres:</label><br>
-    <input type="Nombres"><br><br>
+                        <details>
+                            <summary style="cursor:pointer; font-weight:bold; padding:8px; background-color:#e0e0e0;">CONTACTO DIRECTO</summary>
+                            <p>ASESORA DE VENTAS: Faviana Saico — Teléfono: 999999999</p>
+                        </details>
 
-    <label>Apellidos:</label><br>
-    <input type="Apellidos"><br><br>
+                    </td>
+                </tr>
+            </table>
 
+            <br>
 
-    <label>Correo Electronico:</label><br>
-    <input type="email"><br><br>
+            <!-- CARRITO -->
+            <table id="carrito" cellpadding="6" cellspacing="0" border="0">
+                <tr>
+                    <td><strong>🛒 Carrito</strong></td>
+                </tr>
+                <tr>
+                    <td><a href="#" style="color:green;">Ver carrito</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#" style="color:green;">Por temporada</a></td>
+                </tr>
+            </table>
 
-    <label>Contraseña:</label><br>
-    <input type="password"><br><br>
+            <br>
 
-    <label>TELEFONO:</label><br>
-    <input type="telefono"><br><br>
+            <p><a href="#inicio" style="color:green; font-weight:bold;">⬆ Volver al Inicio</a></p>
 
-   <label>Direccion:</label><br>
-    <input type="direccion"><br><br>
-    <input type="submit" value="Ingresar">
-    
-    </li>
-</form>
+        </td>
+    </tr>
+</table>
 
-    <li>
-</details>
+<!-- ===== FOOTER ===== -->
+<table width="80%" bgcolor="orange" cellpadding="0" cellspacing="0" border="0" style="margin-top:30px;">
+    <tr>
+        <td>
+            <table width="1000" align="center" cellpadding="20" cellspacing="0" border="0">
+                <tr valign="top">
+                    <td width="50%" align="center">
+                        <p style="font-weight:bold;">TELÉFONOS Y CORREO</p>
+                        <p>Teléfono: 99999999</p>
+                        <p>Correo: dssdsd@monroesbaby.com</p>
+                    </td>
+                    <td width="50%" align="center">
+                        <p style="font-weight:bold;">SÍGUENOS</p>
+                        <p>📘 Facebook</p>
+                        <p>📸 Instagram</p>
+                        <p>🐦 Twitter / X</p>
+                        <p>💬 WhatsApp</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="grey" align="center" style="padding:12px; color:white; font-size:12px;">
+            &copy; 2026 MONROESBABY &nbsp;|&nbsp;
+            <a href="#" style="color:white; font-weight:bold;">Política de Privacidad</a>
+        </td>
+    </tr>
+</table>
 
-    <details>
-        <summary>INICIAR SESIÓN</summary>
-    <form action="inicio de sesion index.html" method="get">
-    <label>Correo:</label><br>
-    <input type="email"><br><br>
-
-    <label>Contraseña:</label><br>
-    <input type="password"><br><br>
-
-    <input type="submit" value="Ingresar">
-</form>
-</li>
-
-    </details>
-
-    <details>
-            <summary>INFORMACION</summary>
-            <h2>Sobre nosotros</h2>
-             <p>Somos una empresa dedicada a la venta de ropa para bebés, niños y niñas, para todas las estaciones y edades.</p>
-    </details>
-    <details>
-        <summary>ENVIOS Y PAGOS</summary>
-        <p>¡PROXIMAMENTE!.</p>
-    </details>
-   
-    <details>
-        <summary>CONTACTO</summary>
-        <p>ASESORA DE VENTAS:</p>
-        <p>Faviana Saico. Telefono: 999999999</p>
-        <p></p>
-    </details>
-            </ul>
-    </li>
-        </b>
-        <nav>
-        <a href="#"><h3>Volver al Inicio</h3></a>
-    </nav>
-
-    <br>
-
-    <li>
-           <a href="#">Carrito</a>
-            <ul>
-                <li><a href="#">Ver carrito</a></li>
-                <li><a href="#">Por temporada</a></li>
-                
-            </ul>
-        </li>
-
-<footer>>
-    © 2026 Monroes Kids
-</footer>    
-
-
-
-    
 </body>
 </html>
